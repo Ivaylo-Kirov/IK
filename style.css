@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.intro {
+    padding: 30px;
+}
+
+main.container {
+    width: 100%;
+    background-color: aliceblue;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+main.container .row {
+    background-color: #333;
+    min-height: 100px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main.container .row > * {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1 1 300px;
+    /* flex: grow shrink basis-what it wants to be */
+}
+
+.main_nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.main_nav > * {
+    flex: 0 1 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
