@@ -2,13 +2,24 @@ html, body {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .intro {
     padding: 30px;
+    text-align: center;
 }
 
-main.container {
+.personal_photo {
+    width: 20%;
+    height: auto;
+    /* border-radius: 50%; */
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+main.main_container {
     width: 100%;
     background-color: aliceblue;
     max-width: 960px;
@@ -16,8 +27,7 @@ main.container {
     padding-bottom: 30px;
 }
 
-main.container .row {
-    background-color: #333;
+main.main_container .row {
     min-height: 100px;
     display: flex;
     gap: 10px;
@@ -26,7 +36,15 @@ main.container .row {
     padding-right: 30px;
 }
 
-main.container .row > * {
+main.main_container .heading {
+    background: linear-gradient(141.87deg, #000 0%, #004f83 100%);
+    text-align: center;
+    color: #fff;
+    padding: 30px 20px 30px 30px; /* clockwise  */
+    left: 0;
+}
+
+main.main_container .row > * {
     background-color: #fff;
     padding: 20px;
     flex: 1 1 300px;
@@ -41,6 +59,8 @@ main.container .row > * {
     background-color: #fff;
     padding: 20px;
     border-bottom: 1px solid #e5e5e5;
+    background: linear-gradient(141.87deg, #000 0%, #004f83 100%);
+    margin: 0;
 }
 
 .main_nav > * {
