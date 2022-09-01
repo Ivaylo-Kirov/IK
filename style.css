@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     border: 0;
     font-family: 'Fira Sans', sans-serif;
+    font-size: 13px;
 }
 
 .intro {
@@ -21,10 +22,12 @@ html, body {
 
 main.main_container {
     width: 100%;
-    background-color: aliceblue;
+    background-color: #f0f7f4;
     max-width: 960px;
     margin: 0 auto;
     padding-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: -1;
 }
 
 main.main_container .row {
@@ -37,17 +40,26 @@ main.main_container .row {
 }
 
 main.main_container .heading {
-    background: linear-gradient(141.87deg, #000 0%, #004f83 100%);
+    background: linear-gradient(141.87deg, #02010c 0%, rgb(14, 70, 20) 100%);
     text-align: center;
     color: #fff;
-    padding: 30px 20px 30px 30px; /* clockwise  */
+    padding: 20px 30px 10px 30px; /* clockwise  */
     left: 0;
+    
+}
+
+.project_image {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 main.main_container .row > * {
     background-color: #fff;
     padding: 20px;
     flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* flex: grow shrink basis-what it wants to be */
 }
 
@@ -58,9 +70,12 @@ main.main_container .row > * {
     align-items: center;
     background-color: #fff;
     padding: 20px;
-    border-bottom: 1px solid #e5e5e5;
-    background: linear-gradient(141.87deg, #000 0%, #004f83 100%);
+    /* border-bottom: 1px solid #e5e5e5; */
+    /* background: linear-gradient(141.87deg, #000 0%, #004f83 100%); */
+    background: linear-gradient(141.87deg, #2c3e50 0%, #344a5f 100%);
     margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
 .main_nav > * {
