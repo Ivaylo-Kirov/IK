@@ -1,0 +1,78 @@
+@use '../scss/abstracts/index' as abstracts;
+@use '../scss/base/index' as base;
+
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 13px;
+	
+}
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: abstracts.$font;
+	font-size: 13px;
+	background-color: #f3f3f3;
+	&::-webkit-scrollbar {
+		width: 1rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: abstracts.$darkblue;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #fff;
+	}
+}
+.intro {
+	padding: 50px 50px 10px 50px;
+	text-align: center;
+}
+.personal_photo {
+	width: 20%;
+	height: auto;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+main.main_container {
+	width: 100%;
+	background-color: #fff;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	.row {
+		min-height: 100px;
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+		padding-left: 30px;
+		padding-right: 30px;
+		>* {
+			background-color: #fff;
+			padding: 20px;
+			flex: 1 1 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+	}
+	.heading {
+		margin-top: 50px;
+		margin-bottom: 10px;
+		text-align: center;
+		color: abstracts.$text;
+		padding: 20px 30px 10px 30px;
+		// background-color: #012842;
+		background: linear-gradient(141.87deg, #001929 0%, abstracts.$darkblue 100%);
+	}
+}
+.project_image {
+	max-width: 100%;
+	max-height: 100%;
+}
