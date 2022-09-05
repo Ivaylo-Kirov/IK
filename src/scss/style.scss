@@ -6,8 +6,8 @@ html {
 	padding: 0;
 	border: 0;
 	font-size: 13px;
-	
 }
+
 body {
 	margin: 0;
 	padding: 0;
@@ -15,17 +15,17 @@ body {
 	font-family: abstracts.$font;
 	font-size: 13px;
 	background-color: #f3f3f3;
-	&::-webkit-scrollbar {
-		width: 1rem;
-	}
+	// &::-webkit-scrollbar {
+	// 	width: 1rem;
+	// }
 
-	&::-webkit-scrollbar-track {
-		background: abstracts.$darkblue;
-	}
+	// &::-webkit-scrollbar-track {
+	// 	background: abstracts.$darkblue;
+	// }
 
-	&::-webkit-scrollbar-thumb {
-		background: #fff;
-	}
+	// &::-webkit-scrollbar-thumb {
+	// 	background: #fff;
+	// }
 }
 .intro {
 	padding: 50px 50px 10px 50px;
@@ -52,6 +52,7 @@ main.main_container {
 		flex-wrap: wrap;
 		padding-left: 30px;
 		padding-right: 30px;
+		margin: 0;
 		>* {
 			background-color: #fff;
 			padding: 20px;
