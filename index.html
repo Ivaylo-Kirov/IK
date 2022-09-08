@@ -40,7 +40,7 @@
             <h4><i class="bi-person-heart"></i> Clients</h2>
             <p>Freelance and corporate brand experience over the last few years.</p>
         </div>
-        <div class="row">
+        <div class="main_row">
             <div class="column"><img width="165" height="82" src="images/roche.png" alt="Roche"> </div>
             <div class="column"><img width="165" height="82" src="images/rbc.png" alt="RBC"> </div>
             <div class="column"><img width="165" height="82" src="images/janssen.png" alt="Janssen"> </div>
@@ -51,7 +51,7 @@
         <div class="heading" id="projects">
             <h4><i class="bi-kanban"></i> Latest Projects</h4>
         </div>
-        <div class="row">
+        <div class="main_row">
             <div class="column">
                 <div>Becton Dickinson - Global IGX<br><br><img class="project_image" alt="Becton Dickinson - Global IGX" src="images/bd_landing.png">
                 </div>
@@ -108,20 +108,24 @@
         </div>
         <div class="contact">
             <form action="https://formspree.io/f/xnqoqzjy" method="POST">
-                <div>
+            <div class="row mb-3">
+                <div class="col">
                     <label for="inputEmail4" class="form-label">Name</label>
                     <input type="email" class="form-control" id="inputEmail4">
                 </div>
-                <div>
+                <div class="col">
                     <label for="inputPassword4" class="form-label">Email</label>
                     <input type="password" class="form-control" id="inputPassword4">
                 </div>
+            </div>
+            <div class="row mb-4">
                 <div>
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+            </div>
                 <div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                 </div>
             </form>
         </div>

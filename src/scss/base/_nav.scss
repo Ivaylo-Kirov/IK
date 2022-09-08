@@ -60,11 +60,10 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		// height: 100%;
 		&:hover {
 			background-color: abstracts.$darkblue;
 			a {
-				color: rgb(205, 205, 205);
+				color: rgb(227, 227, 227);
 			}
 		}
 		
