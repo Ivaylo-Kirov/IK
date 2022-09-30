@@ -64,6 +64,29 @@ main.main_container {
 			justify-content: center;
 			align-items: center;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			.project_border {
+				height: 1px;
+				margin-bottom: 21px;
+				background: radial-gradient(#e6e6e6 0%, #fff 100%);
+				width: 100%;
+			}
+			.project_image {
+				// border-top: 2px solid #999;
+				padding-top: 15px;
+			}
+		}
+		.brand_logo {
+			filter: grayscale(1);
+		}
+		.tech_logo {
+			// filter: grayscale(1);
+			width: 40px;
+			margin-right: 10px;
+			transition: transform 0.5s;
+			transform: scale(0.8);
+			&:hover{
+				transform: scale(1.2);
+			}
 		}
 	}
 
