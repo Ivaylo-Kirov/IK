@@ -73,6 +73,12 @@ main.main_container {
 			.project_image {
 				// border-top: 2px solid #999;
 				padding-top: 15px;
+				// transition: transform 0.1s;
+				// transform: scale(1);
+				// &:hover{
+				// 	transform: scale(1.2);
+				// }
+				@include abstracts.basic-hover-animation;
 			}
 		}
 		.brand_logo {
@@ -82,11 +88,6 @@ main.main_container {
 			// filter: grayscale(1);
 			width: 40px;
 			margin-right: 10px;
-			transition: transform 0.5s;
-			transform: scale(0.8);
-			&:hover{
-				transform: scale(1.2);
-			}
 		}
 	}
 
