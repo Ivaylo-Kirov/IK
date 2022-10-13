@@ -60,15 +60,21 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transition: all 150ms ease-in;
+		transform: translateY(0px);
 		&:hover {
-			background-color: abstracts.$darkblue;
+			// background-color: abstracts.$lightblue;
+			background-color: white;
+			transform: translateY(10px);
+			color: abstracts.$lightblue;
+			// height: 50px;
 			a {
-				color: rgb(227, 227, 227);
+				color: abstracts.$lightblue;
 			}
 		}
 		
 		a {
-			color: #fff;
+			color: white;
 			transition: color 230ms;
 			text-decoration: none;
 		}
